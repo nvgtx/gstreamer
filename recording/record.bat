@@ -1,0 +1,1 @@
+C:\gstreamer\1.0\x86_64\bin\gst-launch-1.0.exe -e  ksvideosrc device-index=0 ! video/x-raw,width=1920,height=1080,framerate=30/1 ! videorate ! x264enc ! mp4mux name=mux ! filesink location=recording.mp4 directsoundsrc ! audioconvert ! audioresample ! lamemp3enc mono=true ! mux.

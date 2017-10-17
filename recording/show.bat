@@ -1,0 +1,1 @@
+C:\gstreamer\1.0\x86_64\bin\gst-launch-1.0.exe -e  ksvideosrc device-index=0 ! queue ! "video/x-raw,width=1920,height=1080,framerate=30/1" ! queue ! videorate ! queue ! autovideosink 
